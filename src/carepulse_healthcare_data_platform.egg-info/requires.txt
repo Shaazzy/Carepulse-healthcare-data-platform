@@ -1,0 +1,13 @@
+pandas<3,>=2.2
+faker<40,>=30
+Pillow<13,>=11
+confluent-kafka<3,>=2.5
+azure-identity<2,>=1.19
+azure-storage-file-datalake<13,>=12.17
+python-dotenv<2,>=1
+pyodbc<6,>=5
+
+[dev]
+pytest<10,>=8
+pytest-cov<8,>=5
+ruff<1,>=0.9

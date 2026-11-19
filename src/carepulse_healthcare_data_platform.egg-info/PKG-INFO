@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: carepulse-healthcare-data-platform
+Version: 0.1.0
+Summary: Production-style healthcare data engineering platform
+Requires-Python: <3.13,>=3.11
+Requires-Dist: pandas<3,>=2.2
+Requires-Dist: faker<40,>=30
+Requires-Dist: Pillow<13,>=11
+Requires-Dist: confluent-kafka<3,>=2.5
+Requires-Dist: azure-identity<2,>=1.19
+Requires-Dist: azure-storage-file-datalake<13,>=12.17
+Requires-Dist: python-dotenv<2,>=1
+Requires-Dist: pyodbc<6,>=5
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Requires-Dist: pytest-cov<8,>=5; extra == "dev"
+Requires-Dist: ruff<1,>=0.9; extra == "dev"

@@ -1,0 +1,38 @@
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carepulse-healthcare-data-platform"
+version = "0.1.0"
+description = "Production-style healthcare data engineering platform"
+requires-python = ">=3.11,<3.13"
+
+dependencies = [
+    "pandas>=2.2,<3",
+    "faker>=30,<40",
+    "Pillow>=11,<13",
+    "confluent-kafka>=2.5,<3",
+    "azure-identity>=1.19,<2",
+    "azure-storage-file-datalake>=12.17,<13",
+    "python-dotenv>=1,<2",
+    "pyodbc>=5,<6"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<10",
+    "pytest-cov>=5,<8",
+    "ruff>=0.9,<1"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
