@@ -1,5 +1,10 @@
 README.md
 pyproject.toml
+src/carepulse/common/kafka_config.py
+src/carepulse/consumers/kafka_consumer.py
+src/carepulse/consumers/kafka_to_adls.py
+src/carepulse/producers/glucose_producer.py
+src/carepulse/producers/vitals_producer.py
 src/carepulse_healthcare_data_platform.egg-info/PKG-INFO
 src/carepulse_healthcare_data_platform.egg-info/SOURCES.txt
 src/carepulse_healthcare_data_platform.egg-info/dependency_links.txt
